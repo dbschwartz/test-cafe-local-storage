@@ -1,9 +1,10 @@
 import { Role, Selector } from 'testcafe';
 
-const testRole = Role('http://localhost:8080/', async t => {
+const testRole = Role('https://dbschwartz.github.io/local-storage-demo', async t => {
     await t
-    .click(Selector('#first-link'))
-    .click(Selector('#second-link'))
+    .click(Selector('#first'))
+    .click(Selector('#second'))
+    .click(Selector('#third'))
 }, {preserveUrl: true });
 
 export { testRole }
